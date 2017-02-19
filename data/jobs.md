@@ -26,5 +26,5 @@
 -- Wraiths
 
 Please contact Gandalf if interest,
-catch any pigeon you see nearby and include letter head *For Gandalf*
-and I will contact you immediately.
+catch any pigeon you see nearby and attach letter,
+include letter head *For Gandalf* and we will contact you immediately.
