@@ -4,6 +4,10 @@ Team membership:  Jason Chan (Captain) & Braden D'Eith (Mate)
 Team conventions: Allman notation, markdown for changelog, must edit changelog after every change
 Changelog format: [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) 
 
+## version 1.0.4 ##
+
+### Added 02-18-17 ###
+- updated Wanted page layout
 
 ## version 1.0.3 ##
 
