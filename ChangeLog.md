@@ -4,15 +4,23 @@ Team membership:  Jason Chan (Captain) & Braden D'Eith (Mate)
 Team conventions: Allman notation, markdown for changelog, must edit changelog after every change
 Changelog format: [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) 
 
+## version 1.1.2 ##
+
+### Added 03-02-17 ###
+- Completed job 7
+- Added the user role drop down menu
+- Added role selection
+- Bug on windows, no write permission
+
 ## version 1.1.1 ##
 
-### Added 02-18-17 ###
+### Added 03-02-17 ###
 - completed job 6
 - Added pagination basics: Item page extraction and navigation.
 
 ## version 1.1.0 ##
 
-### Added 02-18-17 ###
+### Added 03-02-17 ###
 - completed job 4
 - Added maintenance page functionality
 
