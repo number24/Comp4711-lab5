@@ -25,6 +25,9 @@ class Application extends CI_Controller
 		$this->data = array ();
 		$this->data['pagetitle'] = 'Number24 - Comp4711 Lab5';
 		$this->data['ci_version'] = (ENVIRONMENT === 'development') ? 'CodeIgniter Version <strong>'.CI_VERSION.'</strong>' : '';
+                
+                $this->data['alerts'] = '';
+                $this->error_free = TRUE;
 	}
 
 	/**
@@ -36,7 +39,22 @@ class Application extends CI_Controller
             //use layout content if provided
             if (!isset($this->data['content']))
                 $this->data['content'] = $this->parser->parse($this->data['pagebody'], $this->data, true);
+            
+            // INSERT THE NEXT FOUR LINES
+            // integrate any needed CSS framework & components
+            $this->data['caboose_styles'] = $this->caboose->styles();
+            $this->data['caboose_scripts'] = $this->caboose->scripts();
+            $this->data['caboose_trailings'] = $this->caboose->trailings();
+            
+            
             $this->parser->parse($template, $this->data);
 	}
 
+        //add an alert to the redered page
+        function alert($message = '', $context = 'success') {
+            $params = ['message' => $message, 'context'=> $context];
+            $this->data['alerts'] .= $this->parser->parse('_alert', $params, true);
+            $this->error_free = FALSE;
+        }
+        
 }
