@@ -10,6 +10,15 @@ Changelog format: [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdo
 - Completed job 10
 - Added job completion checklist
 
+<<<<<<< HEAD
+=======
+## version 1.2.1 ##
+
+### Added 03-09-17 ###
+- Completed job 11
+- added role-specific maintenance list
+
+>>>>>>> develop
 ## version 1.2.1 ##
 
 ### Added 03-09-17 ###
