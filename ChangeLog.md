@@ -7,6 +7,12 @@ Changelog format: [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdo
 ## version 1.2.1 ##
 
 ### Added 03-09-17 ###
+- Completed job 11
+- added role-specific maintenance list
+
+## version 1.2.1 ##
+
+### Added 03-09-17 ###
 - Completed job 9
 - added the caboose package
 - added alert function
