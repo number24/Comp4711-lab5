@@ -83,17 +83,32 @@ class Mtce extends Application {
         $this->session->set_userdata('task', $task);
         $this->showit();
     }
+    
+    //returns all of the names of the db values passed in
+    public function getNames($values = null) {
+        $records;
+        foreach ($values as $record) {
+            $records[$record->id] = $record->name;
+        }
+        return $records;
+    }
 
     // Render the current DTO
     private function showit() {
         $task = $this->session->userdata('task');
         $this->data['id'] = $task->id;
-        foreach ($this->priorities->all() as $record) {
-            $priparms[$record->id] = $record->name;
-        }
+        
+        $priparms = $this->getNames($this->priorities->all());
+        $sizeparms = $this->getNames($this->sizes->all());
+        $groupparms = $this->getNames($this->groups->all());
+        $statparms = $this->getNames($this->statuses->all());
+        
         $fields = array(
             'ftask' => makeTextField('Task description', 'task', $task->task, 'Work', "What needs to be done?"),
             'fpriority' => makeComboBox('Priority', 'priority', $task->priority, $priparms, "How important is this task?"),
+            'fsize' => makeComboBox('Size', 'size', $task->size, $sizeparms, "How big is the task?"),
+            'fgroup' => makeComboBox('Group', 'group', $task->group, $groupparms, "What type of task?"),
+            'fstatus' => makeComboBox('Status', 'status', $task->status, $statparms, "What is the status of the task?"),
             'zsubmit' => makeSubmitButton('Update the TODO task', "Click on home or <back> if you don't want to change anything!", 'btn-success'),
         );
         $this->data = array_merge($this->data, $fields);
