@@ -4,6 +4,46 @@ Team membership:  Jason Chan (Captain) & Braden D'Eith (Mate)
 Team conventions: Allman notation, markdown for changelog, must edit changelog after every change
 Changelog format: [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) 
 
+## version 1.2.5 ##
+
+### Added 03-10-17 ###
+- Completed job 11b
+- added sizes, groups and status to edit and add
+- fixed issue with the add item button
+
+## version 1.2.4 ##
+
+### Added 03-09-17 ###
+- Completed job 12
+- Task Item Maintenance
+- Added button
+
+## version 1.2.3 ##
+
+### Added 03-09-17 ###
+- Completed job 10
+- Added job completion checklist
+
+## version 1.2.2 ##
+
+### Added 03-09-17 ###
+- Completed job 11
+- added role-specific maintenance list
+
+## version 1.2.1 ##
+
+### Added 03-09-17 ###
+- Completed job 9
+- added the caboose package
+- added alert function
+
+## version 1.2.0 ##
+
+### Added 03-09-17 ###
+- Completed job 8
+- Init RDB for sessions
+- created session table in SQL
+
 ## version 1.1.2 ##
 
 ### Added 03-02-17 ###
